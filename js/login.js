@@ -1,9 +1,11 @@
+//Botão enviar
 function logar(){
 
     var login = document.getElementById('login').value;
     var senha = document.getElementById('senha').value;
 
-    if(login == 'Caio' && senha == '123'){
+    // Redirecionamento
+    if(login == 'Admin' && senha == '123'){
         location.href = "menu.html";
     }
     else{
@@ -13,6 +15,6 @@ function logar(){
 }
 
 function logout(){
-    alert('Logou efetuado com sucesso.')
+    alert('Login efetuado com sucesso.')
     location.href = "index.html";
 }
