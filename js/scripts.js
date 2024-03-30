@@ -89,3 +89,8 @@ const handleInputChange = () => {
 addTaskButton.addEventListener("click", () => handleAddTask());
 
 inputElement.addEventListener("change", () => handleInputChange());
+
+function logout(){
+  alert('Logout efetuado com sucesso.')
+  location.href = "index.html";
+}

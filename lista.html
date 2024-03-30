@@ -2,30 +2,32 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js" defer></script>
-    <title>Lista de tarefas</title>
+  <link rel="stylesheet" href="css/lista.css">
+  <script src="js/scripts.js" defer></script>
+  <title>Lista de tarefas</title>
 </head>
 
 <body>
-    <header>
-        <h1>To Do List <i class="fa-solid fa-check"></i></h1>
-    </header>
-    <main>
-        <div class="container">
-            <div class="new-task-container">
-              <input
-                type="text"
-                class="new-task-input"
-                placeholder="Tarefa para ser feita..."
-              />
-      
-              <button class="new-task-button">Adicionar</button>
-            </div>
-      
-            <div class="tasks-container"></div>
-          </div>
-    </main>
+
+  <div class="navbar">
+    <a href="menu.html">Menu</a>
+    <button class="logout-button" onclick="logout()" ; return false>Sair</button>
+  </div>
+
+  <header>
+    <h1>To Do List ✅<i class="fa-solid fa-check"></i></h1>
+  </header>
+  <main>
+    <div class="container">
+      <div class="new-task-container">
+        <input type="text" class="new-task-input" placeholder="Tarefa para ser feita..." />
+
+        <button class="new-task-button">Adicionar</button>
+      </div>
+
+      <div class="tasks-container"></div>
+    </div>
+  </main>
 </body>
 
 </html>
