@@ -56,5 +56,5 @@ h4 {
 img{
     float: right;
     display: flex;
-    margin: 0px 120px 0px 0px;
+    margin: -100px 120px 0px 0px;
 }
