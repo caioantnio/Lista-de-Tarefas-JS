@@ -3,13 +3,12 @@ const addTaskButton = document.querySelector(".new-task-button");
 const tasksContainer = document.querySelector(".tasks-container");
 
 
-//Parte da validação do Input(condição de erro = não ter conteudo)
+//validação Input
 const validateInput = () => inputElement.value.trim().length > 0;
 
-// Parte referente a Criar as Tasks desejadas dentro da área
+//Criar Tarefas
 const handleAddTask = () => {
 
-  //primeiro é colocada em prática a validação e depois continua-se o processo de criar os elementos da task item
   const inputIsValid = validateInput();
 
   console.log(inputIsValid);
