@@ -2,11 +2,8 @@ const inputElement = document.querySelector(".new-task-input");
 const addTaskButton = document.querySelector(".new-task-button");
 const tasksContainer = document.querySelector(".tasks-container");
 
-
-//validação Input
 const validateInput = () => inputElement.value.trim().length > 0;
 
-//Criar Tarefas
 const handleAddTask = () => {
 
   const inputIsValid = validateInput();
@@ -26,21 +23,17 @@ const handleAddTask = () => {
   const deleteItem = document.createElement("div");
   deleteItem.innerHTML = "Apagar";
 
-  //Evente listener responsabel pelo processo de risco da task
   taskContent.addEventListener("click", () => handleClick(taskContent));
 
-  //Evente listener responsável pelo processo de apagar
   deleteItem.addEventListener("click", () => handleDeleteClick(taskItemContainer, taskContent));
 
   taskItemContainer.appendChild(taskContent);
   taskItemContainer.appendChild(deleteItem);
   tasksContainer.appendChild(taskItemContainer);
 
-  //Rtirando o texto da tarefa do Input
   inputElement.value = "";
 };
 
-// Parte Da Função de Riscar ------------------------------------------------------------------
 const handleClick = (taskContent) => {
   const tasks = tasksContainer.childNodes;
 
@@ -53,7 +46,6 @@ const handleClick = (taskContent) => {
   }
 };
 
-//Parte Do "Apagar" em que todo o item container daquela task é removido após o evento click -------------------------------------
 const handleDeleteClick = (taskItemContainer, taskContent) => {
   const tasks = tasksContainer.childNodes;
 
@@ -66,7 +58,6 @@ const handleDeleteClick = (taskItemContainer, taskContent) => {
   }
 };
 
-//Parte relacionada a remoção da classe que mostra a partir da cor vermelha o erro na validação ou seja ausencia de conteudo no input
 const handleInputChange = () => {
   const inputIsValid = validateInput();
 
@@ -75,7 +66,6 @@ const handleInputChange = () => {
   }
 };
 
-//todos os event listerner que vou precisar
 addTaskButton.addEventListener("click", () => handleAddTask());
 inputElement.addEventListener("change", () => handleInputChange());
 

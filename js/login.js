@@ -1,4 +1,4 @@
-//Botão enviar
+//botão enviar
 function logar(){
 
     var login = document.getElementById('login').value;
@@ -14,6 +14,7 @@ function logar(){
 
 }
 
+//alert logout
 function logout(){
     alert('Login efetuado com sucesso.')
     location.href = "index.html";
